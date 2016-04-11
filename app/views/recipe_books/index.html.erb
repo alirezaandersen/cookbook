@@ -1,0 +1,7 @@
+<h1>All Recipes</h1>
+
+<%= link_to "Create New Recipe", new_recipe_path %>
+
+<%= @books.each do |food| %>
+  <p> <%= link_to "#{food.name}", recipe_path(food.id) %>
+<% end %>

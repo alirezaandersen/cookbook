@@ -1,3 +1,3 @@
 class RecipeBook < ActiveRecord::Base
-  belongs_to :recipes
+  has_many :recipes
 end
